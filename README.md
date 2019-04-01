@@ -26,7 +26,7 @@ This is an angular web application that allows users to search themselves or who
 
 ## Contact Information
 
--   [Email](vanmowha@gmail.com)
+*   [Email] (vanmowha@gmail.com)
 
 ## Live Link
 
