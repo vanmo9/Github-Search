@@ -1,0 +1,68 @@
+<div class="container">
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" href="#">GitHUB</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarColor01">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Profile</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				</li>
+			</ul>
+
+		</div>
+	</nav>
+	<form action="" class="search-form">
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="Username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
+		</div>
+	</form>
+	<div *ngIf="profile">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				{{profile.name}} <small>({{profile.login}})</small>
+			</div>vanmo9
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-6">
+						<img id="img" src="{{profile.avatar_url}}" class="img-circle img-responsive" height="300px" width="300px">
+					</div>
+					<div class="col-md-6">
+						<p>
+							<button type="button" class="btn btn-secondary">{{profile.followers}} Followers</button>
+							<button type="button" class="btn btn-secondary">Following {{profile.following}}</button>
+							<button type="button" class="btn btn-secondary">{{profile.public_repos}} Public Repo</button>
+						</p>
+						<p><a href="{{profile.html_url}}" target="blank" class="btn btn-outline-success btn-sm">View profile on github</a></p>
+						<div class="panel panel-default">
+							<h3 class="panel-title">Repos</h3>
+						</div>
+						<div class="panel-body" *ngFor="let repo of repos">
+							<div class="repos">
+								<h4 class="clearfix">
+									{{repo.name}} <a href="{{repo.html_url}}" class="btn btn-outline-info pull right">View on github</a>
+								</h4>
+								<p>{{repo.description}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<style media="screen">
+	#img {
+		border-radius: 50%;
+	}
+</style>
