@@ -19,10 +19,10 @@ This is an angular web application that allows users to search themselves or who
 
 ## Technologies Used
 
-* [HTML] (https://developer.mozilla.org/en-US/docs/Web/HTML)
-* [JavaScript] (https://www.javascript.com)
-* [jQuery] (https://jquery.com)
-* [Bootstrap] (https://getbootstrap.com/)
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [JavaScript](https://www.javascript.com)
+* [jQuery](https://jquery.com)
+* [Bootstrap](https://getbootstrap.com/)
 
 ## Contact Information
 
