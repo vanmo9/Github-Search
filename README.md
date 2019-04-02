@@ -30,7 +30,7 @@ This is an angular web application that allows users to search themselves or who
 
 ## Live Link
 
-* [Quotes](https://gitsearch9.netlify.com/)
+* [Github-Search](https://gitsearch9.netlify.com/)
 
 
 
