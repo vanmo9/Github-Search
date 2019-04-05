@@ -34,5 +34,5 @@ This is an angular web application that allows users to search themselves or who
 
 
 
-## License ([MIT License](http://choosealicense.com/licenses/mit/))
+## License ([MIT License](https://github.com/vanmo9/Github-Search/blob/master/LICENSE))
 This project is licensed under the MIT Open Source license, (c) [Mohamed Hassan](https://github.com/vanmo9)
